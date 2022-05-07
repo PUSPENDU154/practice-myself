@@ -1,0 +1,23 @@
+div{
+    background-color: #9dc6d1;
+    position:relative;
+    top:30px;
+}
+p{
+    /* position: absolute; */
+    /* position: relative; */
+    background-color: #b3b3b3c2;
+    top:50px;
+}
+.class{
+    position: fixed;
+    background-color: blanchedalmond;
+    width:300px;
+    height:200px;
+    top:200px;
+}
+.sticky{
+    position: sticky;
+    top:20px;
+    background-color: crimson;
+}
