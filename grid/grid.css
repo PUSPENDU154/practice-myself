@@ -1,0 +1,47 @@
+ .container{
+     display: grid;
+     /* grid-template-columns: 200px 800px 200px; */
+     /* grid-template-columns: 3fr 1fr 1fr; */
+     /* grid-template-columns: repeat(3,1fr); */
+     /* grid-template-rows: 1fr 5fr 3fr 9fr; */
+     /* repeat(number of repeatation,'fr' range); */
+     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+     /* grid-template-columns: repeat(auto-fill,minmax(200px,1fr)); used for better responsiveness */
+     grid-gap:20px;
+     /*grid-auto-rows:100px ;*//*height*/
+     /*grid-auto-columns: 50px;*//*width*/
+     grid-auto-rows: minmax(100px,auto);/*(start,end)*/
+     grid-auto-columns: minmax(50px,auto);/*(start,end)*/
+     /* column-gap: 120px;
+     row-gap: 120px; */
+ }
+ .items{
+     background-color: lightcoral;
+     border: 3px green solid;
+     border-radius: 3px;
+ }
+ /* #item-2{
+     grid-row-start: 2;
+     grid-row-end: 3;
+     grid-column-start: 2;
+     grid-column-end: 3;
+ } */ /*it has been commented for understanding the nesting well*/
+ /* #item-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+ } */
+
+ /* NESTING OF GRID */
+ #item-1{
+    grid-COLUMN-start: 1;
+    grid-COLUMN-end: 6;
+ }
+ .item-1-container{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+ }
+ .nested-item{
+     border:3px greenyellow solid;
+     border-radius: 3px;
+     background-color: lightgoldenrodyellow;
+ }

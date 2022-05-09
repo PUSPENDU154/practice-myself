@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>for loop</h1>
+    <p id="id1"></p>
+    <h1>for-each loop</h1>
+    <p id="id2"></p>
+    <script>
+         let txt=""
+         for(let i=0;i<10;i++){
+             txt+=("19 * "+(i+1)+" = "+(19*(i+1)))+"<br>"
+         }
+         console.log(txt)
+         document.getElementById("id1").innerHTML=txt
+        // below for-each loop
+         let Txt=""
+         const number=[1,2,3,4,5,6,7,8,9,10]
+         number.forEach(mySum)
+         function mySum(value,index){
+            Txt+="19 * "+value+"="+(19*(index+1))+"<br>"
+         }
+         document.getElementById("id2").innerHTML=Txt
+    </script>
+</body>
+</html>
