@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EXAMPLES</title>
+</head>
+<body>
+    <a href="http://google.com" id="anchor">My Link</a>
+    <h1 id="heading">My Heading</h1>
+
+   <button id="baa">button</button>
+
+    
+    <script>
+let num=1
+        baa=document.getElementById("baa")
+        baa.addEventListener("click",()=>{
+            num=num+1;
+            console.log(num.value)
+        })
+        
+
+        const element=document.getElementById("anchor")
+        element.setAttribute("href","http://acciojob.com")
+        console.log(element.href)
+
+        const add=document.createElement("p")
+        add.innerHTML="Hey there"
+        document.getElementById("heading").appendChild(add) 
+        // add.innerHTML="get Out"
+        // document.appendChild(add)
+        add.innerHTML="no one"
+        document.body.appendChild(add)
+    </script>
+</body>
+</html>

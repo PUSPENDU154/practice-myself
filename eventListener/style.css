@@ -1,0 +1,23 @@
+p{
+    background-color: aqua;
+    padding: 5px;
+    border: red solid 2px;
+}
+
+button{
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    padding:10px;
+    border: none;
+    overflow: hidden;
+}
+
+button:hover{
+    background-color: chocolate;
+}
+
+button:focus{
+    outline: 5px violet dashed;
+    outline-offset: 2px;
+}

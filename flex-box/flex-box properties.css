@@ -26,4 +26,9 @@
 #item-3{
     /* order:40; */
 }
+.fa-brands{
+    color: red;
+    background-color: yellow;
+    overflow: hidden;
+}
 
