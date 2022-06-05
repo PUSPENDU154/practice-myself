@@ -11,13 +11,15 @@
     grid-template-rows: 133px 1fr 1fr;
     row-gap: 12px;
     column-gap: 12px;
+    /* justify-items:center; */
+    place-items: center;/*all items are in center*/
 
 }
 
 .item{
     background-color: aqua;
-    /* height: 122px;
-    width: 122px; */
+    height: 122px;
+    width: 122px;
     margin: 6px;
     text-align: center;
     
@@ -40,6 +42,11 @@
     grid-column-end: 4;
 }
 
+.item:nth-of-type(2){
+    /* justify-self: center; */
+    place-self: center;
+}
+
 /* .item:nth-last-of-type(2){
     grid-row-start: 2;
     grid-row-end: 4;
@@ -50,3 +57,4 @@
     grid-column-end: 4;
     height: 133px;
 }
+/* place-self and place-items are important in grid css */

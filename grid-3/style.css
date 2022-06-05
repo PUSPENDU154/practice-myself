@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:grid;
+    width: 90vw;
+    height:90vh;
+    box-shadow: 0 0 8px 3px darkgray;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+    justify-content:center;
+    align-content: space-evenly;
+
+}
+
+.item{
+    display: grid;
+    background-color: burlywood;
+    margin: 6px;
+    justify-items: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.item:nth-of-type(6){
+    display: grid;
+    justify-self: end;
+    align-self: start;
+    /* align-self is an inline property */
+}
