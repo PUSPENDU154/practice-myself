@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="onresizeFunc()">
+    <button onclick="onlyClick()">Event By Click</button>
+    
+    <p ondblclick="doubleClick()">Event By DoubleClick</p>
+    
+    <div oncontextmenu="rightClick()">Event By RightClick</div>
+    
+    <p class="onmouseenterClass"  onmouseenter="mouseHover()">
+        
+        <span style="text-transform:upperCase; font-size: 30px; font-weight: bolder;line-height: 30px;">i have to hover mouse on this text: 
+        </span>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nobis. 
+        
+        <span style="display:block;text-transform: uppercase; font-weight: bolder;">onmouseenter event</span>
+    
+    </p>
+
+    <div class="onmouseoutClass" onmouseout="mouseCursorOut()">
+        <span style="font-weight:bolder;">onmouseout Event:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab excepturi odio non aliquid, recusandae nihil.
+    </div>
+
+    <div class="onmousedownClass" onmousedown="onmousedownFunc()">
+        <span style="font-weight:bolder; color: yellow;">onmousedown Event:</span> It will action when it will be left clicked by mouse
+    </div>
+
+    <div class="onmouseupClass" onmouseup="onmouseupFunc()">
+        <span style="font-weight:bolder;">onmouseup Event:</span>
+        it occurs when a user releases a mouse bottom over an elemnt
+    </div>
+
+    <!-- <div class="onkeypressClass" onkeypress="onkeypressFunc()">
+        <label for="text">Text:</label>    
+        <input type="text" id="text">
+    </div> -->
+
+    <!-- onkeypress HAPPENS WITH ONLY BODY OR FORMS -->
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

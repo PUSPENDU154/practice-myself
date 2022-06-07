@@ -1,0 +1,36 @@
+.onmouseenterClass{
+    line-height:20px; 
+    margin:20px 0; 
+    background-color:aquamarine; 
+    padding: 5px; 
+    display:inline-block;
+}
+
+.onmouseoutClass{
+    background-color: blanchedalmond;
+    display: inline-block;
+    padding: 10px;
+}
+
+.onmousedownClass{
+    background-color: brown;
+    display: inline-block;
+    margin: 30px 0;
+    padding:10px;
+    color: white;
+    width: 60vw;
+}
+
+.onmouseupClass{
+    background-color: beige;
+    display: inline-block;
+    box-shadow: 0 0 2px 2px gray;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* .onkeypressClass{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+} */

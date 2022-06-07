@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Diference between mouseover,mouseenter,mousemove -->
+    <title>mousemove mouseover and mouseenter</title>
+    <link rel="stylesheet" href="mouseMoveEnterOver.css">
+</head>
+<body>
+   
+    <div onmousemove="onmousemoveHover()" class="mousemoveClass">
+        <div>
+            onmousemove Event
+        </div>    
+    </div>
+    
+    <p style="margin-bottom: 0; font-weight: bold; margin-top: 30px;">onmouseenter Event at below:</p><!--heading-->
+    <div onmouseenter="onmouseenterHover()" class="mouseenterClass">
+        <div></div>
+    </div>
+    
+    <p>&nbsp;</p>
+    
+    <div onmouseover="onmouseoverHover()" style="background-color:aquamarine; height: 200px; width: 200px;margin: 20px;">
+        <div style="background-color:cadetblue; height: 100px; width: 100px;position: relative; top: 25px; margin: auto;">onmouseover Event</div>
+    </div>
+
+    <script src="mouseMoveEnterOver.js"></script>
+</body>
+</html>
