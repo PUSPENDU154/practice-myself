@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+.imageupper>img{
+    width: 20vw;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.middleImage{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.middleImageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 8px;
+}
+.middleImageContainer>img{
+    width: 20vw;
+    height: 25vh;
+    border-radius: 5px;
+    margin: 0 5px;
+
+}
+
+

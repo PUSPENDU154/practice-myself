@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+.container{
+    background-color: rgba(207, 192, 192,0.5);
+    background-color: none;
+    margin: 80px auto;
+    width: 70vw;
+    height: 80vh;
+    /* outline: dashed; */
+    padding: 5px;
+}
+
+.para{
+    background-color: rgb(192, 194, 70);
+    margin: 5px;
+}
+
+#Xpara{
+    float: left;
+    width: 45%;
+}
+#Ypara{
+    float: right;
+    width: 45%;
+}
+#Zpara{
+    /* float: left; */
+    clear: both;
+    width: 100%;
+}
