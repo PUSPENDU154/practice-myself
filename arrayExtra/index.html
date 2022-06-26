@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array events</title>
+</head>
+<body>
+    <div id="mapProperty"></div>
+    <div id="filterProperty"></div>
+
+    <div style="text-align:center;">
+        <h1 style="color:green;">reduce() Method</h1>
+        <button onclick="myFunc(1020)" style="padding:10px;">click here</button>
+        <br><br>
+
+        sum: <span id="sumAns"></span>
+    </div>
+
+    <script>
+        const number=[45,12,18,19,102]
+        // map function 
+        console.log(number.map(funcMap))
+        function funcMap(value){
+            return value*10;
+        }
+        
+        // foreach function
+        // const number=[45,12,18,19,102]//it has ben shown just for an example
+        number.forEach(funcForEach)
+        function funcForEach(value,index){
+           console.log("the value of "+index+" th number inside the array is: "+value*10);
+        }
+
+        // filter function
+        // const number=[45,12,18,19,102]//it has ben shown just for an example
+        console.log(number.filter(funcFilter))
+        function funcFilter(value,index,array){
+            if(value>=18 && index%2===0 && array.length===5)
+            return value
+        }
+
+        function splits(array){
+            let odd=[],even=[]
+            array.forEach(splitArray)
+            function splitArray(value,index){
+                if(index%2===0){
+                    odd.push(value)
+                }else if(index%2!==0){
+                    even.push(value)
+                }
+            }
+            console.log(odd,even)
+        }
+
+        const arrX=[5,8,6,9,5,4,12,{name:"Puspendu",age:23},"const"]
+        splits(arrX)
+
+
+        const person={
+            firstName:"Puspendu",
+            lastName:"Saha",
+            age:23,
+        }
+
+        for(let x in person){
+            console.log("key is: "+x+"    value is: "+person[x])
+        }
+
+        // const number1=[45,4,9,16,25]
+        // let sum=number1.reduce(myFunc)
+        // function myFunc(total,value,index,array){
+        //     return total+value
+        // }
+        // console.log(sum)
+        // document.write(sum)
+
+        const number2=[100.298,75.25,25.52845545]
+        console.log(number2.reduce(reduceFunc,0))
+        function reduceFunc(total,value,index,array){
+            return total-Math.round(value)
+        }
+
+        const arr=[15,45,7,65,3,4,11]
+        function subArray(total,value,index){
+             return total+value;
+        }
+
+        function myFunc(item){
+            document.getElementById("sumAns").innerHTML=arr.reduce(subArray)+item
+        }
+    </script>
+</body>
+</html>

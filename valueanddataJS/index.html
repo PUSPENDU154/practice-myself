@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value and Data in JS</title>
+</head>
+
+<body>
+
+    <h1>HTML DOM Attributes</h1>
+    <h2>The value and data Property</h2>
+    <p>The value property returns the value of an attribute:</p>
+    <p>The data property returns the character that was inserted with the event. when Write something in the text field to trigger a function.</p>
+
+    <input type="text" id="demo" oninput=func(event)>
+    <br>
+    The value is:<div id="show"></div>
+    The value is:<div id="show1"></div>
+    The value is:<div id="show2"></div>
+
+    <script>
+        let count=0
+        function func(event) {
+            const element = document.getElementById("demo");
+            let value1 = element.value;
+            let output = event.data
+            console.log(event.data)
+            console.log("The Value is: "+value1)
+            document.getElementById("show").innerHTML = value1;
+            document.getElementById("show1").innerHTML = output;
+            
+            if(output===" "){
+                count++
+                document.getElementById("show2").innerHTML = value1.length-count;
+            }else{
+                document.getElementById("show2").innerHTML =value1.length-count;
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Change EventListener i Javascript</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter an Input" id="text" >
+    <script>
+        const text=document.getElementById("text")
+        const part=document.querySelector(".part")
+
+        // text.addEventListener("input",()=>{
+        //     console.log(text.value)
+        // })
+        text.addEventListener("change",()=>{
+            console.log(text.value)
+        })
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>InputEvent data Property</h1>
+
+    <p>The data property returns the character that was inserted with the event.</p>
+
+    <p>Write something in the text field to trigger a function.</p>
+
+    <input type="text" id="myInput" oninput="myFunction(event)">
+
+    <p>The inserted character: <span id="demo"></span></p>
+
+    <p><strong>Note:</strong> This property is not fully supported, and can change before the final release.</p>
+    <script>
+        function myFunction(event) {
+            // document.getElementById("demo").innerHTML = event.data;
+            console.log(event.value)// will be undefined
+            // console.log(event.data)
+        }
+    </script>
+
+</body>
+
+</html> -->

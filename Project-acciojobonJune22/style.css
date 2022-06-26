@@ -10,7 +10,6 @@
 .middleImage{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 
 .middleImageContainer{
@@ -20,8 +19,8 @@
     margin: 8px 8px;
 }
 .middleImageContainer>img{
-    width: 20vw;
-    height: 25vh;
+    width: 15vw;
+    height: 15vh;
     border-radius: 5px;
     margin: 0 5px;
 
